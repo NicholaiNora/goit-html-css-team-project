@@ -1,0 +1,248 @@
+.how-its-made-container {
+  display: flex;
+  width: 1136px;
+  min-height: 478px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.how-its-made-content-container {
+  display: flex;
+  width: 1136px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  // position: relative;
+}
+
+.how-its-made-description-container {
+  display: flex;
+  flex-direction: column;
+  width: 516px;
+  height: 400px;
+  padding: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.how-its-made-heading {
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.how-its-made-heading span {
+  color: #fd9222;
+}
+
+.how-its-made-paragraph {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+}
+
+.how-its-made-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.how-its-made-item {
+  display: flex;
+  gap: 8px;
+}
+
+.how-its-made-instruction {
+  width: 410px;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.how-its-made-video {
+  width: 600px;
+  height: 400px;
+  border-radius: 15px;
+  border: none;
+}
+
+.how-its-made-icon {
+  width: 50px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.img-video {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  opacity: 1;
+}
+
+.img-video > #img {
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  transition: 1s;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.active > img#img {
+  display: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: 1s;
+  border-radius: 15px;
+}
+
+.active #svg {
+  transition: 1s;
+  opacity: 0;
+}
+
+.how-its-made-iframe {
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  width: 600px;
+  height: 400px;
+}
+
+@media (max-width: 767px) {
+  .how-its-made-container {
+    display: flex;
+    width: 335px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .how-its-made-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 335px;
+    height: 976px;
+  }
+
+  .how-its-made-heading {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+  }
+
+  .img-video {
+    position: absolute;
+    width: 335px;
+    height: 500px;
+    opacity: 1;
+  }
+
+  .how-its-made-img {
+    width: 335px;
+    height: 500px;
+  }
+
+  .how-its-made-iframe {
+    width: 335px;
+    height: 500px;
+  }
+
+  .how-its-made-description-container {
+    display: flex;
+    padding: 20px 14px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 335px;
+    height: 456px;
+  }
+
+  .how-its-made-paragraph {
+    width: 307px;
+    height: 416px;
+  }
+
+  .how-its-made-instruction {
+    width: 291px;
+  }
+
+  .how-its-made-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .how-its-made-container {
+    display: flex;
+    width: 614px;
+    min-height: 854px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-its-made-content-container {
+    display: flex;
+    width: 614px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-its-made-description-container {
+    display: flex;
+    width: 614px;
+    height: 356px;
+    padding: 32px;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .how-its-made-paragraph {
+    width: 350px;
+  }
+
+  .how-its-made-instruction {
+    width: 464px;
+  }
+
+  .how-its-made-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+}
